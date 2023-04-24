@@ -1,0 +1,28 @@
+
+h3{
+  align-items: center;
+ 
+}
+table, th, td {
+  border: 1px solid rgb(252, 241, 241);
+  overflow:hidden;
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+   margin-left: 400px;
+  margin-top: 30px;
+}
+table{
+  margin-right: 100%;
+  width: 450px;
+  height: 490px;
+  margin-top: 5%;
+}
+th,td{
+  text-align: center;
+}
+.btn{
+  margin-left: 80%;
+  margin-top: 5%;
+}
+
+
+

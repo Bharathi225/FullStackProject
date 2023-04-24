@@ -1,0 +1,25 @@
+.visit{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+    background-size: cover;
+    width:450px;
+    height: 350px;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    margin-left: 75%;
+    margin-top: 25%;
+}
+img{
+  width: 400px;
+    height:250px;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+.btn{
+    margin-left:48%;
+    color:black;
+    margin-top:10px;
+}
+span{
+   margin-left:30%;  
+}

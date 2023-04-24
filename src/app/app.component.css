@@ -1,0 +1,79 @@
+nav{
+    background-image: linear-gradient(to bottom right,  #FF33CC,#3399FF);
+    text-align: center;
+    padding:2px;
+    color: rgb(241, 238, 230);
+    font-style: italic;
+}
+.logout,.nav-item{
+    margin-right: 5px;
+    color: black;
+}
+.nav{
+  margin-left: 30%;
+}
+ .heading{
+  margin-left: 2%;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+  font-weight: 1000;
+ }
+
+/* <- Demo Stuff Start */
+
+.container {
+  display: flex;
+  justify-content: center center;
+  align-items: center ;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 60vh;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 5px;
+  padding: 8px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(33, 32, 32);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  /*box-shadow: 0 0 20px #eee;*/
+  border-radius: 10px;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.btn-3 {
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+.btn-4 {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.btn-5 {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+}
+
+.btn-6 {
+  background-image: linear-gradient(to right, #f3b2b2 0%, #fa9999 51%, #f4865a 100%);
+}
+
+/* Magic Stuff End -> */

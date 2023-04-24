@@ -1,0 +1,104 @@
+<!--<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+        data-bs-toggle="dropdown">Grade</button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">6th to 10th</a> </li>
+        <li><a class="dropdown-item" href="#">11th to 12th</a> </li>
+    </ul>
+</div>-->
+<!--This is for select the subject for particular student by grade-->
+<div class="d-flex flex-row bd-highlight mb-3" id="isLowerGrade" *ngIf="checkLowerGrade()">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/maths.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">Mathematics helps students to understand and make better patterns, graphs,
+                        appreciate areas and see similarities between
+                        shapes and sizes. </p>
+                    Staff : <span>Mrs.R.Shanthi., M.sc., B.Ed.</span>
+                </div>
+            </div>
+        </label>
+    </div>
+    &nbsp; &nbsp;
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+        <label class="form-check-label" for="flexCheckChecked">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/science.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Science</h5>
+                    <p class="card-text">Concepts covered include food, fibre, sorting materials, plants, movements of
+                        the human body, living organisms, motion,
+                        light, electricity, magnets, air and water.</p>
+                    Staff : <span>Mr.D.Ravi, M.sc., B.Ed.</span>
+                </div>
+            </div>
+        </label>
+    </div>
+    &nbsp; &nbsp;
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+        <label class="form-check-label" for="flexCheckChecked">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/social.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Social</h5>
+                    <p class="card-text">Social is the learning and exploring geographical
+                        values, historical events, civil laws and economical status
+                        of a country included with the social are
+                        political, and economics.</p>
+                    Staff : <span>Mr.R.Vanji, M.sc., B.Ed.</span>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>
+<br>
+<div class="d-flex flex-row bd-highlight mb-3" id="isHigherGrade" *ngIf="!checkLowerGrade()">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/bio.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Biology</h5>
+                    <p class="card-text">Biology which include topics like Genetics and Evolution, Reproduction, Human
+                        Welfare etc.</p>
+                </div>
+            </div>
+        </label>
+    </div>
+    &nbsp; &nbsp;
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+        <label class="form-check-label" for="flexCheckChecked">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/computer.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Science</h5>
+                    <p class="card-text">stem programming, Design & Analysis of Algorithms, Computer networks,
+                        Computational Mathematics, Artificial Intelligence.</p>
+                </div>
+            </div>
+        </label>
+    </div>
+    &nbsp; &nbsp;
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+        <label class="form-check-label" for="flexCheckChecked">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/commerce.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Commerce</h5>
+                    <p class="card-text">Accountancy, Business Studies, Economics, Mathematics/ Informatics Practices
+                        and English. Apart from these subjects,
+                        optional subject are Entrepreneurship and Physical Education.</p>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>

@@ -1,0 +1,201 @@
+h1{
+  text-align: center;
+}
+.body{
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  color: black;
+}
+.right{
+  margin-left: 10%;
+  margin-top: 5px;
+}
+h3{
+  margin-right: 2%;
+}
+.left{
+  background-image: url("src\assets\about1.png");
+  background-size: cover;
+
+  width: 450px;
+  height: 220px;
+  margin-left: 7%;
+  margin-top: 4%;
+  background-repeat: no-repeat;
+}
+*{
+margin:0;
+padding: 0; 
+box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+}
+body{
+display: flex;
+min-height: 35vh;
+background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+.container{
+margin-top: 2%;
+position: relative;
+display: flex;
+justify-content: center; 
+align-items: left;
+flex-wrap: wrap;
+gap: 40px;
+}
+h3{
+  text-align: center;
+  color: black;
+}
+/*follow us*/
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  margin:  10px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #010508;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.aside{
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+.link{
+position:relative;
+padding: 50px;
+width: 1220px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container .card{
+position:relative;
+width: 200px;
+height: 200px;
+background: #2a2a2a;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container .card .percent{
+position:relative;
+width: 150px;
+height: 150px;
+}
+.container .card .percent svg{
+position:relative;
+width: 150px;
+height: 150px;
+transform: rotate(270deg);
+}
+.container .card .percent svg circle{
+width: 100%;
+height: 100%;
+fill:transparent;
+stroke-width: 2;
+stroke: #191919;
+transform: translate(5px,5px);
+}
+.container .card .percent svg circle:nth-child(2){
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num))/100);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 1s;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.dot{
+position: absolute;
+inset: 5px;
+z-index: 10;
+animation: animateDot 1.5s linear forwards;
+}
+@keyframes animateDot{
+  0%{
+    transform: rotate(180deg);
+  }
+   100%{
+    transform: rotate(calc (3.6deg * var(--num)));
+  }
+}
+img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%; 
+    position:relative;
+}  
+.dot::before{
+content: '';
+position: absolute;
+top: -5px;
+left: 50%;
+transform: translateX(-50%);
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background:var(--clr);
+box-shadow: 0 0 10px var(--clr),0  0 30px var(--clr);
+}
+.number{
+  position: absolute;
+  inset:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 0.5s;
+}
+.number h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+.number h2 span{
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.5em;
+}
+.number p{
+  font-weight: 300;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.75);
+}

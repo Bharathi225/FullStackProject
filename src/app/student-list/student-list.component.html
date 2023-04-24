@@ -1,0 +1,88 @@
+<body>
+    <!--This is for search by standard name in student details table-->
+    <div class="list row">
+        <div class="col-md-8">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="firstName" placeholder="Search by Student Name"
+                    [(ngModel)]="firstName">
+                <div class="input-group-append">
+                    <button class="search" class="btn btn-primary" type="button" (click)="searchByName()"><i
+                            class="fa fa-fw fa-search"></i>
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--This is for fetch by standard list in student details table-->
+    <select (change)="fetchByStandard($event)" name="gradeValue" [(ngModel)]="gradeValue" id="dropdown">
+        <option value="0" selected disabled>Select Grade</option>
+        <option value="6">Grade 6</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+        <option value="9">Grade 9</option>
+        <option value="10">Grade 10</option>
+        <option value="11">Grade 11</option>
+        <option value="12">Grade 12</option>
+    </select>
+
+    <!--<button class="btn btn-primary" type="submit" (click)="fetchByStandard()">fetch 6th standard
+    </button>-->
+    <!--This is for table standard list -->
+    <h2 style="margin-right: 10%;"><b> STUDENT LIST</b></h2>
+    <table class="table table-hover">
+
+        <thead>
+            <tr>
+                <th> StudentId</th>
+                <th> StudentName</th>
+                <th> StudentClass </th>
+                <th> ContactNo</th>
+                <th> City</th>
+                <th> Gender</th>
+                <th> DOB</th>
+                <th> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let student of students">
+                <td> {{ student.id }} </td>
+                <td> {{ student.name }} </td>
+                <td> {{ student.standard }} </td>
+                <td> {{ student.contact }} </td>
+                <td> {{ student.city }} </td>
+                <td> {{ student.gender }} </td>
+                <td> {{ student.dateOfBirth }} </td>
+                <td>
+                    <!--This is for actions in student details table-->
+                    <button (click)="viewCourse(student)" class="btn btn-secondary" style="background-color: purple;"
+                        data-bs-toggle="tooltip" title="Subjects"><i class="fa fa-fw fa-book"></i></button>
+                    <button (click)="confirmUpdate(student)" class="btn btn-info" style="margin-left: 10px"
+                        data-bs-toggle="tooltip" title="Update">
+                        <i class="fa fa-fw fa-edit"></i>
+                    </button>
+                    <button (click)="studentDetails(student.id)" class="btn btn-success" style="margin-left: 10px"
+                        data-bs-toggle="tooltip" title="View">
+                        <i class="fa fa-fw fa-eye"></i>
+                    </button>
+                    <button (click)="confirmDelete(student)" class="btn btn-danger" style="margin-left: 10px"
+                        data-bs-toggle="tooltip" title="Delete">
+                        <i class="fa fa-fw fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+            <!--This is the button to remove the record in standard list-->
+
+            <tr scope="row" *ngIf="students.length === 0">
+                <td colspan="8" style="width: 1000px;" class="text-center"> No Record Found !!</td>
+            </tr>
+            <tr *ngIf="students.length !== 0">
+                <button class="m-2 btn btn-sm btn-danger" (click)="removeAllStudents()" style="color: black;">
+                    Remove All Students
+                </button>
+                <a href="students" class="btn btn-primary" style="color: black;">Back</a>
+            </tr>
+        </tbody>
+    </table>
+</body>

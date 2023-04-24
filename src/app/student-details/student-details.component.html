@@ -1,0 +1,57 @@
+<!--<div class="show">
+    <div>
+        <label> <b> StudentId: </b></label> {{student.id}}
+    </div>
+    <div>
+        <label> <b> StudentName: </b></label> {{student.name}}
+    </div>
+    <div>
+        <label> <b> StudentClass: </b></label> {{student.standard}}
+    </div>
+    <div>
+        <label> <b> ContactNo: </b></label> {{student.contact}}
+    </div>
+</div>-->
+
+<!--This is for view by standard list in student details table actions-->
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">
+                <h3><b> View Student Details </b></h3>
+            </th>
+        </tr>
+        <tr>
+            <th> StudentId:</th>
+            <td>{{student.id}}</td>
+        </tr>
+        <tr>
+            <th> StudentName:</th>
+            <td>{{student.name}}</td>
+        </tr>
+        <tr>
+            <th> Standard: </th>
+            <td>{{student.standard}}</td>
+        </tr>
+        <tr>
+            <th> ContactNo:</th>
+            <td>{{student.contact}}</td>
+        </tr>
+        <tr>
+            <th> StudentCity:</th>
+            <td>{{student.city}}</td>
+        </tr>
+        <tr>
+            <th> Gender:</th>
+            <td>{{student.gender}}</td>
+        </tr>
+        <tr>
+            <th> DateOfBirth:</th>
+            <td>{{student.dateOfBirth}}</td>
+        </tr>
+        <tr colspan="2">
+            <a href="students" class="btn btn-success">Back</a>
+        </tr>
+    </table>
+</body>

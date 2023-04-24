@@ -1,0 +1,93 @@
+<!--<nav class="navbar navbar-light" style="background-color: #f286c1;">
+    <ul class="nav nav-pills">
+        <li>
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="students" routerLinkActive="active" class="nav-link"
+                href="#"><i class="fa fa-fw fa-list"></i>Student List</a>
+        </li>
+        <li>
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="create-student" routerLinkActive="active"
+                class="nav-link" href="#"><i class="fa fa-fw fa-id-card"></i>Add Student</a>
+        </li>
+          <li>
+             <a *ngIf="!loginService.isUserLoggedIn()" routerLink="login" routerLinkActive="active"
+                class="btn btn-success nav-link"></a></li>
+    </ul>
+
+    <div class="logout justify-content-md-end">
+        <a href="logout" *ngIf="loginService.isUserLoggedIn()" routerLink="logout"
+            class="btn btn-danger navbar-btn end"><i class="fa fa-sign-out"></i>
+            Logout</a>
+    </div>
+
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>-->
+
+<nav class="navbar navbar-light">
+    <h1 class=" heading">
+        <span class="image">
+            <img src="../assets/students.png" width="40px" height="50px">
+        </span>&nbsp;
+        {{title}}
+        <!--<span class="image">
+            <img src="../assets/student.png" width="40px" height="50px">
+        </span>-->
+    </h1>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn()" routerLink="home" class="nav-link" class="btn btn-1" href="#">
+                <i class="fa fa-fw fa-home"></i>Home</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn()" routerLink="aboutus" class="nav-link" class="btn btn-2" href="#">
+                <i class="fa fa-fw fa-info-circle"></i>About</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn()" routerLink="education" class="nav-link" class="btn btn-3"
+                href="#">
+                <i class="fa fa-fw fa-book"></i>Education</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn()" routerLink="profile" class="nav-link" class="btn btn-6" href="#">
+                <i class="fa fa-fw fa-id-card"></i>Profile</a>
+        </li>
+        <!-- <li class=" nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn()" routerLink="services" class="nav-link" class="btn btn-4" href="#">
+                <i class="fa fa-th-large fa-fw w3-margin-right"></i>Services</a>
+        </li>-->
+        <li class="nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn()" routerLink="contactus" class="nav-link" class="btn btn-1"
+                href="#">
+                <i class="fa fa-fw fa-phone"></i>Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="students" class="nav-link" class="btn btn-3" href="#">
+                <i class="fa fa-fw fa-list"></i>Student List</a>
+        </li>
+        <li class=" nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="create-student" class="nav-link" class="btn btn-2"
+                href="#">
+                <i class="fa fa-fw fa-plus"></i>Add Student</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="feedback" class="nav-link" class="btn btn-4" href="#">
+                <i class="fa fa-fw fa-comment"></i> Feedback</a>
+        </li>
+        <li class=" nav-item">
+            <a *ngIf="!loginService.isUserLoggedIn()" routerLink="login" class="nav-link" class="btn btn-5" href="#"><i
+                    class="fa fa-sign-in"></i>
+                Login</a>
+        </li>
+
+    </ul>
+
+    <div class="logout justify-content-md-end">
+        <a *ngIf="loginService.isUserLoggedIn()" (click)="confirmLogout()" routerLink="logout" class="nav-link"
+            routerLinkActive="active" class="btn btn-6 navbar-btn end">
+            <i class="fa fa-sign-out"></i>Logout</a>
+    </div>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

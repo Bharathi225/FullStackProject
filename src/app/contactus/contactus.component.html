@@ -1,0 +1,45 @@
+<body>
+    <!--This is for contact us admin by user if they have any queries-->
+    <h1>Contact Us</h1>
+    <p>
+        If you have any questions or feedback about our teaching, please don't hesitate to reach out to us. You can
+        directly
+        email us at <b><i class="fa fa-fw fa-envelope"></i>
+            <a href="mailto: bharathir1722@gmail.com">bharathir1722@gmail.com </a></b> or try to call us at<b><i
+                class="fa fa-fw fa-phone"></i><a href="tel:9363623335">+91 9363623335 </a></b>
+        Thank you for your interest in our E-learning, and we look forward to hearing from you.</p>
+    <p></p>
+</body>
+
+<br>
+<div class="body">
+    <div class="offset-md-1 col-lg-5">
+        <div class="panel border bg-white">
+            <div class="panel-heading">
+                <h3 class="pt-3 font-weight-bold">Contact Form</h3>
+            </div>
+            <div class="panel-body p-3">
+                <form>
+                    <div class="form-group pt-3">
+                        <div class="input-field">
+                            <input type="text" name="name" placeholder="Name" [(ngModel)]="name">
+                        </div>
+                    </div>
+                    <div class="form-group pt-3">
+                        <div class="input-field">
+                            <input type="email" name="email" placeholder="Email" [(ngModel)]="email">
+                        </div>
+                    </div>
+                    <div class="form-group pt-3">
+                        <div class="input-field">
+                            <textarea placeholder="Comments..." name="comments" [(ngModel)]="comments"></textarea>
+                        </div>
+                    </div>
+
+                    <button (click)=checkMail() type="submit" class="btn btn-primary btn-block mt-4 w-100">Send</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

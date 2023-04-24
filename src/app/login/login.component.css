@@ -1,0 +1,76 @@
+/*.title{
+   background-color: rgb(7, 70, 142);
+   font-style: italic;
+   text-align: center;
+   padding: 5px;
+   margin-left: 100px;
+   margin-right: 100px;
+   color: wheat;
+}*/
+#e{
+  color: red;
+}
+/* login heading*/
+.panel-heading{  
+  text-align: center;
+  margin-bottom: 10px;
+}
+  .btn{
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  /*login box*/
+ .panel{
+    min-height: 380px; 
+    border-radius: 12px; 
+    width: 370px;
+    margin: 350px;
+    margin-top: 20%;
+ }
+ /*icon textbox*/
+.input-field{
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #4343ff;
+}
+.input-field.error{ 
+  border: 1px solid red; 
+  color: red; 
+}
+input[type='text'],
+input[type='password']{ 
+  box-shadow: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.fa-eye-slash.btn{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+/*connect with img*/
+img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%; 
+    position:relative;
+}  
+/*line*/  
+.bordert {
+  border-top: 1px solid  #aaa;
+  position: relative;
+} 
+.bordert:after {  
+  content: "or connect with";
+  position: absolute;
+  top: -20px;
+  left: 35%;
+  background-color: #edd9d9;
+  padding: 5px;
+}

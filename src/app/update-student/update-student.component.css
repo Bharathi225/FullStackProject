@@ -1,0 +1,26 @@
+
+.form-group{
+    color: black;
+}
+h2{
+    text-align: center;
+    margin-top: 10%;
+    color: black;
+}
+.form-control{
+     background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+form{
+      margin-left: 18%;
+      width: 280px;
+      text-align: center;
+      padding: 2px;
+}
+.body{ 
+    margin-left: 110%;
+    margin-top: 10%;
+    width: 400px;
+    border-style: hidden;
+     background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    border-radius: 20px;
+}

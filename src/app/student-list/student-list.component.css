@@ -1,0 +1,41 @@
+*{
+    margin-right: 2%;
+}
+thead,tbody,h2{
+    text-align: center;
+}
+table:hover{
+    background-color: rgb(250, 205, 237);
+}
+table:hover thead{
+    background-color: rgb(245, 131, 212);
+}
+table{
+    color: rgb(8, 0, 0);
+    width: 90%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    width: 132%;
+    height: 100%;   
+}
+.input-group{
+    width: 500px;
+    height: 32px;
+    justify-content: center;
+    left: 90%;
+}
+.form-control{
+    left:5%;
+}
+select{
+    background-color: rgb(113, 28, 89);
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+}
