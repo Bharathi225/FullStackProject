@@ -19,7 +19,7 @@ constructor(public loginService:AuthenticationService, private router:Router) { 
       this.router.navigate(['logout']);
     }
     else{
-     this.router.navigate(['students']);
+     this.router.navigate(['feedback']);
   }
   }
  }
